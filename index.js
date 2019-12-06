@@ -51,7 +51,7 @@ app.use("/admin", require("./routes/admin.js"));
 app.use("/dosen", require("./routes/dosen.js"));
 app.use("/mahasiswa", require("./routes/mahasiswa.js"));
 
-const PORT = process.env.PORT | 5000;
+const PORT = process.env.PORT || 5000;
 
 // Serve Static Folder
 app.use(express.static(path.join(__dirname, "public")));
