@@ -30,8 +30,6 @@ router.post("/", (req, res) => {
       }).save((err, product) => {
         if (err) throw err;
 
-        console.log(product);
-
         return res.redirect("/dosen");
       });
     });
